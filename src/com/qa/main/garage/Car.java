@@ -1,6 +1,6 @@
 package com.qa.main.garage;
 
-public class Car extends Vehicle{
+public class Car extends Vehicle implements fixVehicle{
 	
 	//Fields
 	private int doors;
@@ -66,6 +66,28 @@ public class Car extends Vehicle{
 	public String passengers(int people) {
 		return "The max number of passengers in my biggest car is " + people;
 	}
+
+
+	@Override
+	public String intFixVehicle(float fixCost) {
+		fixCost = 1000;
+		if(electric == true) {
+			fixCost += 1000;
+			return "It is £1000 more to fix electric cars.";
+		}else if(doors > 2) {
+			fixCost += 500;
+			return "It is £500 more to fix cars with more than 2 doors.";
+		}else if(vintage == true) {
+			fixCost *= 2;
+			return "Vintage cars double the price!";	
+		}else if(model == "Ferrari" || model == "Lamborghini") {
+			fixCost += 200;
+			return "Sports cars are £200 more.";
+		}else
+		return null;
+	}
+
+
 	
 	
 	

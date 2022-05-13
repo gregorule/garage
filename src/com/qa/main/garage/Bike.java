@@ -1,6 +1,6 @@
 package com.qa.main.garage;
 
-public class Bike extends Vehicle{
+public class Bike extends Vehicle implements fixVehicle{
 	
 	//Fields
 	private boolean pedalBike;
@@ -57,6 +57,23 @@ public class Bike extends Vehicle{
 	@Override
 	public String passengers(int people) {
 		return "The max number of passengers on a bike is " + people;
+	}
+
+
+	@Override
+	public String intFixVehicle(float fixCost) {
+		fixCost = 250;
+		if(pedalBike == true) {
+			fixCost /= 2;
+			return "Pedal bikes cut the price in half.";
+		}else if(stickers >= 10) {
+			fixCost += 100;
+			return "These stickers have to bump the price up by £100.";
+		}else if(model == "Harley Davidson") {
+			fixCost += 1250;
+			return "You'll have to pay more for that Harley.";
+		}else
+		return null;
 	}
 	
 	
