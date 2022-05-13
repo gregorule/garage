@@ -22,6 +22,11 @@ public class Runner {
 		Van fordVan = new Van("Blue", 4, true, 59999.99f, "Big", true, 500);
 		Van vauxhall = new Van("White", 6, true, 99999.99f, "Very Big", true, 136);
 		
+		System.out.println(fordVan.intFixVehicle(1000));
+		System.out.println(bianchiBike.intFixVehicle(1000));
+		System.out.println(jaguarCar.intFixVehicle(1000));
+		
+		
 		
 	}
 

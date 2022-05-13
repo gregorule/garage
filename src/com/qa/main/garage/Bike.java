@@ -65,15 +65,12 @@ public class Bike extends Vehicle implements fixVehicle{
 		fixCost = 250;
 		if(pedalBike == true) {
 			fixCost /= 2;
-			return "Pedal bikes cut the price in half.";
 		}else if(stickers >= 10) {
 			fixCost += 100;
-			return "These stickers have to bump the price up by £100.";
 		}else if(model == "Harley Davidson") {
 			fixCost += 1250;
-			return "You'll have to pay more for that Harley.";
-		}else
-		return null;
+		}
+		return "The total price to fix this bike will be £" + fixCost;
 	}
 	
 	

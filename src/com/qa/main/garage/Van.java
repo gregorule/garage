@@ -60,15 +60,12 @@ public class Van extends Vehicle implements fixVehicle{
 		fixCost = 1500;
 		if(size == "Big" || size == "Very Big") {
 			fixCost *= 2;
-			return "A van that size will double the price.";
 		}else if(hireOut == true) {
 			fixCost += 100;
-			return "For insurance purposes, that hire van will cost more.";
 		}else if(jobsDone > 500) {
 			fixCost /= 2;
-			return "Because you have done more than 500 job with that, I'll give you half off!";
-		}else
-		return null;
+		}
+		return "The total price to fix this van will be £" + fixCost;
 	}
 	
 	

@@ -2,7 +2,7 @@ package com.qa.main.garage;
 
 import java.util.ArrayList;
 
-public class Garage {
+public class Garage implements fixVehicle{
 	
 	public static void garageArray() {
 		
@@ -27,6 +27,12 @@ public class Garage {
 		vanModelList.add("Ford");
 		vanModelList.add("Vauxhall");
 		
+	}
+
+	@Override
+	public String intFixVehicle(float fixCost) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

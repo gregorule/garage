@@ -73,18 +73,14 @@ public class Car extends Vehicle implements fixVehicle{
 		fixCost = 1000;
 		if(electric == true) {
 			fixCost += 1000;
-			return "It is £1000 more to fix electric cars.";
 		}else if(doors > 2) {
 			fixCost += 500;
-			return "It is £500 more to fix cars with more than 2 doors.";
 		}else if(vintage == true) {
-			fixCost *= 2;
-			return "Vintage cars double the price!";	
+			fixCost *= 2;	
 		}else if(model == "Ferrari" || model == "Lamborghini") {
 			fixCost += 200;
-			return "Sports cars are £200 more.";
-		}else
-		return null;
+		}
+		return "The total price to fix this car will be £" + fixCost;
 	}
 
 
