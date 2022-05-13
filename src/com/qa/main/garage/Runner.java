@@ -5,10 +5,10 @@ public class Runner {
 	public static void main(String[] args) {
 		
 		//car.object
-		Car toyotaCar = new Car("Blue", 4, true, 22500f, 4, true, "Toyota", false);
-		Car ferrariCar = new Car("Red", 4, true, 149999.99f, 2, false, "Ferrari", false);
-		Car jaguarCar = new Car("Black", 4, true, 99950.50f, 5, false, "Jaguar", true);
-		Car landRoverCar = new Car("Green", 5, true, 80000f, 5, false, "Land Rover", false);
+		Car toyotaCar = new Car("Blue", 4, true, 22500f, 4, true, "Aygo", false);
+		Car ferrariCar = new Car("Red", 4, true, 149999.99f, 2, false, "California", false);
+		Car jaguarCar = new Car("Black", 4, true, 99950.50f, 5, false, "E-Type", true);
+		Car landRoverCar = new Car("Green", 5, true, 80000f, 5, false, "Evoke", false);
 		
 		//bike.object
 		Bike yamahaBike = new Bike("Yellow", 2, true, 10749.99f, false, "Yamaha", 999);
